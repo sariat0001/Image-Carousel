@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: rgb(226, 232, 239);">
 <h1>My Picture Book</h1>
 <h4>Created By</h4>
 <h3>Sariat Adenike</h3>
@@ -17,6 +17,7 @@
 
 <h2 id="desc"></h2>
 <img  id="Image" height="500px" width="500px">
+
 
 <p>Please enter your email to join my newsletter;</p>
 <ul id="list"></ul>
@@ -38,12 +39,14 @@ function convertToNumber(value) {
 
 Image_name = ['https://img.etimg.com/thumb/msid-88634316,width-1200,height-900,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg', 'https://unify.com/wp-content/uploads/2019/09/Remote-working-blog-rebecca-1.jpg', 'https://dr3h7ptpe31k5.cloudfront.net/Assets/images/3711/Conventional-Workspace-London-Camden-Town-47-Kentish-Town-Road-877032.jpg'];
 description = ['Tech-pic', 'Remote-pic', 'Office-pic'];
+let element_Image = document.getElementById('Image');
+element_Image.setAttribute("src", 'https://images.unsplash.com/photo-1689141047490-a0916682dcfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
 
 
 document.getElementById('pre').addEventListener('click', (event) => {
-  let element_Image = document.getElementById('Image');
+  let element_Image2 = document.getElementById('Image');
   Image_name.push(Image_name[0]);
-  element_Image.setAttribute("src", Image_name.shift());
+  element_Image2.setAttribute("src", Image_name.shift());
   let element_desc = document.getElementById('desc');
   description.push(description[0]);
   element_desc.innerText = description.shift();
@@ -51,9 +54,9 @@ document.getElementById('pre').addEventListener('click', (event) => {
 });
 
 document.getElementById('nex').addEventListener('click', (event) => {
-  let element_Image2 = document.getElementById('Image');
+  let element_Image3 = document.getElementById('Image');
   Image_name.unshift(Image_name.slice(-1)[0]);
-  element_Image2.setAttribute("src", Image_name.pop());
+  element_Image3.setAttribute("src", Image_name.pop());
   let element_desc2 = document.getElementById('desc');
   description.unshift(description.slice(-1)[0]);
   element_desc2.innerText = description.pop();
