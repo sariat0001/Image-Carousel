@@ -6,9 +6,10 @@
     <title>Document</title>
 </head>
 <body style="background-color: rgb(226, 232, 239);">
+
 <h1>My Picture Book</h1>
-<h4>Created By</h4>
-<h3>Sariat Adenike</h3>
+<h4>UNESCO World Heritage Sites</h4>
+<h3>created by: Sariat Adenike</h3>
 
 <p>User's story: the website enables the users to click and rotate the images by using the previous and next image buttons. It also allows the user to give feedback or receive a newsletter.</p>
 
@@ -16,10 +17,9 @@
 <button id="nex">Next Image</button>
 
 <h2 id="desc"></h2>
-<img  id="Image" height="500px" width="500px">
+<img  id="image" height="500px" width="500px">
 
-
-<p>Please enter your email to join my newsletter;</p>
+I will be glad to rceive a comment or feedback from you;
 <ul id="list"></ul>
 <input id="text"></input>
 <button id="button">Submit</button> 
@@ -37,16 +37,16 @@ function convertToNumber(value) {
 }
 
 
-Image_name = ['https://img.etimg.com/thumb/msid-88634316,width-1200,height-900,imgsize-65126,resizemode-8,quality-100/tech/technology/tracking-the-buzz-in-tech.jpg', 'https://unify.com/wp-content/uploads/2019/09/Remote-working-blog-rebecca-1.jpg', 'https://dr3h7ptpe31k5.cloudfront.net/Assets/images/3711/Conventional-Workspace-London-Camden-Town-47-Kentish-Town-Road-877032.jpg'];
-description = ['Tech-pic', 'Remote-pic', 'Office-pic'];
-let element_Image = document.getElementById('Image');
-element_Image.setAttribute("src", 'https://images.unsplash.com/photo-1689141047490-a0916682dcfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
+Image_name = ['https://www.rivieratravel.co.uk/blog/wp-content/uploads/2019/03/top-10-UNESCO-world-heritage-sites-Great-Wall-of-China_V8-1024x684.jpg', 'https://www.rivieratravel.co.uk/blog/wp-content/uploads/2019/03/top-10-UNESCO-world-heritage-sites-Yellowstone-National-Park_V8-1024x684.jpg', 'https://www.rivieratravel.co.uk/blog/wp-content/uploads/2019/03/top-10-UNESCO-world-heritage-sites-Great-Barrier-Reef_V8-1024x635.jpg', 'https://res.cloudinary.com/enchanting/f_auto,q_70,w_1598,h_797,c_fill/et-web/2019/06/Enchanting-Travels-Top-10-UNESCO-World-Heritage-sites-in-2019-Taj-Mahal-India-taj-mahal-agra.jpg', 'https://res.cloudinary.com/enchanting/f_auto,q_70,w_1600,h_700,c_fill/et-web/2019/06/Enchanting-Travels-Top-10-UNESCO-World-Heritage-sites-in-2019-Stone-Town-Zanzibar.jpg', 'https://res.cloudinary.com/enchanting/f_auto,q_70,w_1600,h_703,c_fill/et-web/2019/06/Enchanting-Travels-Top-10-UNESCO-World-Heritage-sites-in-2019-Sumatran-Rainforest-Indonesia.jpg', 'https://res.cloudinary.com/enchanting/f_auto,q_70,w_1600,h_713,c_fill/et-web/2019/06/Enchanting-Travels-Top-10-UNESCO-World-Heritage-sites-in-2019-Medina-of-Fes-Morocco-Souk.jpg'];
+description = ['The Great Wall, China When researching tours to China, you’ll undoubtedly find that the Great Wall appears on most itineraries. Rightly so. The UNESCO World Heritage Site snakes almost 12,500 miles along the country’s forested ridges and is a formidable protective barrier, one of the world’s largest military structures – and the only man-made monument visible from space. Built from the 3rd Century BC to the 17th Century AD, the main body consists of walls, watch towers, horse tracks, fortresses and passes, and is still considered to be a national symbol for safeguarding the security of China and its people.', 'Yellowstone National Park, USA You’ll undeniably take a walk on the wild side at Yellowstone National Park, while on holiday in the USA. The country’s first and finest nature reserve is an awe-inspiring blend of natural beauty and rugged wilderness, and home to grizzly bears, bison and elk. Yellowstone additionally has the world’s largest concentration of geysers – more than 300, or two-thirds of all those on the planet. The most famous, Old Faithful, is also the most reliable, frequently erupting to the delight of watching visitors. Look out too for the park’s tallest waterfall, Lower Falls, nearly twice the size of the falls at Niagara.', 'Great Barrier Reef, Australia No holiday Down Under or tour of Australia would be complete without a trip to the Great Barrier Reef. And the natural World Heritage Site is indeed great, containing the world’s largest collection of coral reefs, over 1,500 species of fish and around 240 species of birds, as well as a diversity of crustaceans, anemones and marine worms. Snorkelling at the stunning Michaelmas Cay National Park, easily accessible from Cairns on the mainland, there’s the opportunity to get up close to parrot fish, giant clams and even sea turtles. For landlubbers, glass-bottom boats mean you don’t miss out.', 'Taj Mahal, India Not just an enduring symbol of Mughal architecture, the impossibly beautiful Taj Mahal in India tells an eternal tale of love. Built on the banks of the Yamuna river by Emperor Shah Jahan for his late wife, this imposing white marble structure is considered the most beautiful structure in the world by many – no wonder it draws in thousands of visitors every year, few of who leave disappointed!', 'Zanzibar’s Stone Town, Tanzania Delve deep into the colorful history of Zanzibar at this UNESCO site. Narrow, labyrinth like streets lead you past ancient heritage buildings, distinctive architecture and ramparts of the Old Fort, straight into a bustling spice market – Zanzibar is, after all, known as the ‘Spice Island’! Not just heritage buildings, this preserved site also tells tales of Africa’s slave trade, having been used as the base of operations. Just outside the city limits, an impossibly azure ocean and soft white sand awaits at some of the most beautiful beaches in the world!', 'Sumatran Rainforest, Indonesia A vast area shared by three Indonesian national parks, this land of incredible biodiversity is also home to the last remaining orangutans, Sumatran tigers and rhinos and pygmy elephants in the world! Tranquil waterfalls, hot springs and eco-conscious resorts make this the destination of choice for nature and wildlife tours in Asia. The rainforest area near the remote village of Tangkahan in Indonesia is also known for its unique group of domesticated elephants who help rangers patrol the dense forests!', 'Medina of Fes, Morocco At this UNESCO-listed site, 1300 years of history and heritage are yours to discover! Touted by locals as the most beautiful medina in all of Morocco, you’ll be awed at the exquisite examples of Islamic art and architecture in Fes. These narrow streets are flanked on either side by bustling souks occupied by tailors, artists, and traders, quaint cafes that lead to outdoor markets, the covered bazaar, and quiet squares where you can spot children at play. The new medina, the medersa or Islamic educational institute, and the iconic Bab Boujloud or Blue Gate, are great places to indulge in people watching. If you need any more convincing, here’s a list of even more reasons to travel to Morocco.'];
+let element_image = document.getElementById('image');
+element_image.setAttribute("src", 'https://www.dolomitiunesco.info/wp-content/uploads/2022/10/icone-whs.jpg');
 
 
 document.getElementById('pre').addEventListener('click', (event) => {
-  let element_Image2 = document.getElementById('Image');
+  let element_image2 = document.getElementById('image');
   Image_name.push(Image_name[0]);
-  element_Image2.setAttribute("src", Image_name.shift());
+  element_image2.setAttribute("src", Image_name.shift());
   let element_desc = document.getElementById('desc');
   description.push(description[0]);
   element_desc.innerText = description.shift();
@@ -54,9 +54,9 @@ document.getElementById('pre').addEventListener('click', (event) => {
 });
 
 document.getElementById('nex').addEventListener('click', (event) => {
-  let element_Image3 = document.getElementById('Image');
+  let element_image3 = document.getElementById('image');
   Image_name.unshift(Image_name.slice(-1)[0]);
-  element_Image3.setAttribute("src", Image_name.pop());
+  element_image3.setAttribute("src", Image_name.pop());
   let element_desc2 = document.getElementById('desc');
   description.unshift(description.slice(-1)[0]);
   element_desc2.innerText = description.pop();
@@ -67,7 +67,8 @@ document.getElementById('button').addEventListener('click', (event) => {
   let element_list = document.getElementById('list');
   element_list.innerText = document.getElementById('text').value;
 
-});</script>
+});
+</script>
 
 </body>
 
